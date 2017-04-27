@@ -11,7 +11,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/zaya"
-        android:layout_marginTop="300dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/imageView" />
@@ -21,7 +20,6 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
         android:text="Привет, я твой помощник, перейдите к меню для управления"
         android:textColor="@color/textView"
         android:layout_marginBottom="16dp"
@@ -35,7 +33,7 @@
         android:text="Перейти к меню"
         android:background="@color/textView"
         android:textColor="#fff"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:onClick="clickToZayaInfo"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
@@ -46,7 +44,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/zayato"
-        android:layout_marginBottom="18dp"
         android:layout_above="@+id/textView"
         android:layout_alignParentStart="true" />
 </RelativeLayout>
