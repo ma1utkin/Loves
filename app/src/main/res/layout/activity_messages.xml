@@ -9,12 +9,7 @@
     tools:context="com.example.ma1ut.love.MessagesActivity">
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="89232309993" />
-
-    <EditText
-        android:id="@+id/editText"
+        android:id="@+id/sms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/zaya4"
@@ -24,10 +19,11 @@
         android:gravity="top" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnMess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Отправить"
+        android:onClick="btnOkMess"
         android:textSize="30sp"
         android:textColor="#fff"
         android:layout_gravity="right"
