@@ -4,8 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/zaya3"
     tools:context="com.example.ma1ut.love.ZayaInfo">
 
+    <Button
+        android:id="@+id/btnMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textView"
+        android:text="Отправить сообщение"
+        android:textColor="#fff"
+        android:layout_below="@+id/btnVk"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
 
+    <Button
+        android:id="@+id/btnVk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textView"
+        android:textColor="#fff"
+        android:text="Связаться с любимым в Вконтакте"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="126dp" />
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="Позвонить"
+        android:background="@color/textView"
+        android:layout_below="@+id/btnMessages"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
 
 </RelativeLayout>

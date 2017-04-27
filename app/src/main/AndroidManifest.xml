@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ZayaInfo"></activity>
+        <activity android:name=".ZayaInfo" />
+        <activity android:name=".MessagesActivity"></activity>
     </application>
 
 </manifest>
