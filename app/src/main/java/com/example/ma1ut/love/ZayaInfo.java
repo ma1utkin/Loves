@@ -34,8 +34,9 @@ public class ZayaInfo extends AppCompatActivity implements View.OnClickListener{
                 intent = new Intent(this, MessagesActivity.class);
                 startActivity(intent);
                 break;
-
             case R.id.btnVk:
+                intent = new Intent(this, VkontakteHelpMessagess.class);
+                startActivity(intent);
                 break;
 
             case R.id.btnCall:

@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".ZayaInfo" />
-        <activity android:name=".MessagesActivity"></activity>
+        <activity android:name=".MessagesActivity" />
+        <activity android:name=".VkontakteHelpMessagess"></activity>
+        <uses-permission android:name="android.permission.INTERNET"/>
     </application>
 
 </manifest>
