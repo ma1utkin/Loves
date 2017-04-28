@@ -5,21 +5,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class ZayaInfo extends AppCompatActivity implements View.OnClickListener{
 
-    Button btnMessages;
-    Button btnVk;
-    Button btnCall;
+    ImageButton btnMessages;
+    ImageButton btnVk;
+    ImageButton btnCall;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zaya_info);
 
-        btnMessages = (Button)findViewById(R.id.btnMessages);
-        btnVk = (Button)findViewById(R.id.btnVk);
-        btnCall = (Button)findViewById(R.id.btnCall);
+        btnMessages = (ImageButton)findViewById(R.id.btnMessages);
+        btnVk = (ImageButton)findViewById(R.id.btnVk);
+        btnCall = (ImageButton) findViewById(R.id.btnCall);
 
         btnMessages.setOnClickListener(this);
         btnVk.setOnClickListener(this);
@@ -43,5 +44,9 @@ public class ZayaInfo extends AppCompatActivity implements View.OnClickListener{
                 break;
 
         }
+    }
+
+    public void cancel_Click(View v){
+        finish();
     }
 }

@@ -1,43 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/zaya3"
-    tools:context="com.example.ma1ut.love.ZayaInfo">
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:background="@drawable/imagesfon"
+    tools:context="com.example.ma1ut.love.ZayaInfo"
+    >
 
-    <Button
+    <ImageButton
         android:id="@+id/btnMessages"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/textView"
-        android:text="SMS Сообщение"
-        android:textColor="#fff"
-        android:layout_below="@+id/btnVk"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="23dp" />
+        android:layout_columnWeight="1"
+        android:layout_width="wrap_content"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:background="@null"
+        android:src="@drawable/smsme" />
 
-    <Button
-        android:id="@+id/btnVk"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/textView"
-        android:textColor="#fff"
-        android:text="Вконтакт"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="126dp" />
-
-    <Button
+    <ImageButton
         android:id="@+id/btnCall"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#fff"
-        android:text="Позвонить"
-        android:background="@color/textView"
-        android:layout_below="@+id/btnMessages"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
+        android:layout_columnWeight="1"
+        android:layout_width="wrap_content"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:background="@null"
+        android:src="@drawable/callme" />
 
-</RelativeLayout>
+    <ImageButton
+        android:layout_columnWeight="1"
+        android:id="@+id/btnVk"
+        android:layout_column="2"
+        android:layout_row="0"
+        android:background="@null"
+        android:src="@drawable/vkme" />
+
+    <Button
+        android:text="Назад"
+        android:textColor="#fff"
+        android:background="@color/textView"
+        android:onClick="cancel_Click"
+        android:layout_column="3"
+        android:layout_row="2"/>
+
+
+</GridLayout>

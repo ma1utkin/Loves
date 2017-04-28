@@ -34,11 +34,18 @@ public class MainApp extends AppCompatActivity {
 
     }
 
+    /**
+     * Метод вызываеться при нажатии на кнопку меню
+     * @param view
+     */
     public void btnOkMainAppClick(View view){
         Intent intent = new Intent(this, ZayaInfo.class);
         startActivity(intent);
     }
 
+    /**
+     * Диалоговое окно
+     */
     public void alertDia(){
         context = MainApp.this;
         String title = "Внимание: ";
@@ -57,5 +64,7 @@ public class MainApp extends AppCompatActivity {
         });
         ad.show();
     }
+
+
 
 }
