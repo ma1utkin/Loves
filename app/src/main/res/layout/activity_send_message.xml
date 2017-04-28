@@ -10,20 +10,25 @@
 
     <EditText
         android:id="@+id/edText"
+        android:textSize="25sp"
+        android:background="@drawable/fon"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:hint="Введите сообщение"
+        android:textColor="#fff"
         android:gravity="top"
          />
 
     <Button
         android:id="@+id/btnClickMess"
         android:onClick="send"
-        android:layout_width="wrap_content"
+        android:textColor="#fff"
+        android:background="@color/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:text="Button" />
+        android:text="Отправить" />
 
 
 </RelativeLayout>

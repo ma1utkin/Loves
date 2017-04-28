@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/textView"
-        android:text="Отправить сообщение"
+        android:text="SMS Сообщение"
         android:textColor="#fff"
         android:layout_below="@+id/btnVk"
         android:layout_alignParentStart="true"
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:background="@color/textView"
         android:textColor="#fff"
-        android:text="Связаться с любимым в Вконтакте"
+        android:text="Вконтакт"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="126dp" />
