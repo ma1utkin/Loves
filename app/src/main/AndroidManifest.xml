@@ -25,6 +25,7 @@
         </activity>
         <activity
             android:name=".ZayaInfo"
+            android:theme="@style/Theme.AppCompat.Translucent"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
         <activity
@@ -38,6 +39,7 @@
         <activity
             android:name=".MainApp"
             android:configChanges="orientation"
+            android:theme="@style/Theme.AppCompat.Translucent"
             android:screenOrientation="portrait" />
         <activity android:name=".coreVkontakte.SendMessage"></activity>
     </application>

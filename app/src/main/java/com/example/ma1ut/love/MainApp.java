@@ -52,7 +52,7 @@ public class MainApp extends AppCompatActivity {
         String message = "Приложение находиться в тестируемой версии, возможно проблемы с визуализацией Элементов экранов";
         String button1String = "Ок, понятно";
 
-        ad = new AlertDialog.Builder(context);
+        ad = new AlertDialog.Builder(context, R.style.AppCompatAlertDialogStyle);
         ad.setTitle(title);
         ad.setMessage(message);
         ad.setPositiveButton(button1String, new DialogInterface.OnClickListener() {

@@ -10,5 +10,5 @@
         android:layout_height="wrap_content"
         android:id="@+id/imgView"
         android:layout_gravity="center"
-        android:src="@drawable/logo"/>
+        android:src="@drawable/logogo"/>
 </FrameLayout>

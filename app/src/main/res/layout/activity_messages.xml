@@ -5,15 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#fff"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp"
     tools:context="com.example.ma1ut.love.MessagesActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Номер телефона"
+        android:inputType="number"
+        />
 
     <EditText
         android:id="@+id/sms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/zaya4"
-        android:hint="Messages"
+        android:background="@drawable/smsdaily"
+        android:hint="Сообщение"
         android:textColor="@color/textView"
         android:layout_weight="1"
         android:gravity="top" />
@@ -24,7 +34,8 @@
         android:layout_height="wrap_content"
         android:text="Отправить"
         android:onClick="btnOkMess"
-        android:textSize="30sp"
+        android:textSize="15sp"
+        android:padding="14dp"
         android:textColor="#fff"
         android:layout_gravity="right"
         android:background="@color/textView"
