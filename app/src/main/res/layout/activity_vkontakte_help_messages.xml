@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context="com.example.ma1ut.love.VkontakteHelpMessagess">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vk"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView3" />
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Список друзей"
+        android:id="@+id/button2"
+        android:textColor="#fff"
+        android:background="@color/textView"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="34dp"
+        android:onClick="friendClick"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3" />
+</RelativeLayout>

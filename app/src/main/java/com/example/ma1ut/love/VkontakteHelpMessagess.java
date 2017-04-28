@@ -3,8 +3,10 @@ package com.example.ma1ut.love;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
+import com.example.ma1ut.love.coreVkontakte.FriendsList;
 import com.vk.sdk.VKAccessToken;
 import com.vk.sdk.VKCallback;
 import com.vk.sdk.VKScope;
@@ -31,10 +33,15 @@ public class VkontakteHelpMessagess extends AppCompatActivity {
             }
             @Override
             public void onError(VKError error) {
-                // Произошла ошибка авторизации (например, пользователь запретил авторизацию)
+                finish();
             }
         })) {
             super.onActivityResult(requestCode, resultCode, data);
         }
+    }
+
+    public void friendClick(View v){
+        Intent intent = new Intent(this, FriendsList.class);
+        startActivity(intent);
     }
 }
